@@ -8,6 +8,7 @@ import bannerPetaniDesktop from '@/assets/banner-petani-desktop.png';
 import bannerPetaniMobile from '@/assets/banner-petani-mobile.png';
 import bannerDemoDesktop from '@/assets/banner-demo-desktop.jpg';
 import bannerDemoMobile from '@/assets/banner-demo-mobile.jpg';
+import bannerShowroom from '@/assets/banner-showroom-desktop.png'
 
 const projects = [
   {
@@ -31,11 +32,9 @@ const projects = [
   {
     id: 3,
     title: "Website Showroom Mobil Terintergrasi dengan Sistem Admin Panel",
-    description: "Coming soon....",
-    desktopBanner:
-      "https://i.postimg.cc/Pq68JPKX/1-best-car-dealer-websites-jpg.avif",
-    mobileBanner:
-      "https://i.postimg.cc/Pq68JPKX/1-best-car-dealer-websites-jpg.avif",
+    description: "Akan segera dideploy...",
+    desktopBanner: bannerShowroom,
+    mobileBanner: bannerShowroom,
   },
   {
     id: 4,
