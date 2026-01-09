@@ -6,7 +6,7 @@ import bannerCompanyDesktop from '@/assets/banner-company-desktop.jpg';
 import bannerCompanyMobile from '@/assets/banner-company-mobile.jpg';
 import bannerPetaniDesktop from '@/assets/banner-petani-desktop.png';
 import bannerPetaniMobile from '@/assets/banner-petani-mobile.png';
-import bannerDemoDesktop from '@/assets/banner-demo-desktop.jpg';
+import bannerDemoDesktop from '@/assets/banner-demo-desktop.jpeg';
 import bannerDemoMobile from '@/assets/banner-demo-mobile.jpg';
 import bannerShowroom from '@/assets/banner-showroom-desktop.png'
 
@@ -40,8 +40,8 @@ const projects = [
     id: 4,
     title: "Website Showcase Product dengan UI Modern",
     description: "Coming soon....",
-    desktopBanner: "https://i.postimg.cc/Qd37yLHH/Design-for-Starbucks.jpg",
-    mobileBanner: "https://i.postimg.cc/Qd37yLHH/Design-for-Starbucks.jpg",
+    desktopBanner: bannerDemoDesktop,
+    mobileBanner: bannerDemoMobile,
   },
 ];
 
