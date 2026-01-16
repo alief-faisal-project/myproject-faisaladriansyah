@@ -1,14 +1,15 @@
-import { useState, useCallback, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import ProjectCard from './ProjectCard';
+import { useState, useCallback, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import ProjectCard from "./ProjectCard";
 
-import bannerCompanyDesktop from '@/assets/banner-company-desktop.jpg';
-import bannerCompanyMobile from '@/assets/banner-company-mobile.jpg';
-import bannerPetaniDesktop from '@/assets/banner-petani-desktop.png';
-import bannerPetaniMobile from '@/assets/banner-petani-mobile.png';
-import bannerDemoDesktop from '@/assets/banner-demo-desktop.jpeg';
-import bannerDemoMobile from '@/assets/banner-demo-mobile.jpg';
-import bannerShowroom from '@/assets/banner-showroom-desktop.png'
+import bannerCompanyDesktop from "@/assets/banner-company-desktop.jpg";
+import bannerCompanyMobile from "@/assets/banner-company-mobile.jpg";
+import bannerPetaniDesktop from "@/assets/banner-petani-desktop.png";
+import bannerPetaniMobile from "@/assets/banner-petani-mobile.png";
+import bannerDemoDesktop from "@/assets/banner-demo-desktop.jpeg";
+import bannerDemoMobile from "@/assets/banner-demo-mobile.jpg";
+import bannerShowroom from "@/assets/banner-showroom-desktop.png";
+import bannerurbnx from "@/assets/bannerurbnx.png";
 
 const projects = [
   {
@@ -31,10 +32,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Website Showroom Mobil Terintergrasi dengan Sistem Admin Panel",
-    description: "Akan segera dideploy...",
-    desktopBanner: bannerShowroom,
-    mobileBanner: bannerShowroom,
+    title: "Website Urban Fashion Modern",
+    description:
+      "Website Showcase Produk Fashion Seperti Backpack, T-Shirt, Hoodie Dll",
+    desktopBanner: bannerurbnx,
+    mobileBanner: bannerurbnx,
+    url: "https://urbnx.vercel.app/",
   },
   {
     id: 4,
@@ -50,7 +53,7 @@ const ProjectCarousel = () => {
   const [slidesPerView, setSlidesPerView] = useState(3);
 
   const updateSlidesPerView = useCallback(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       if (window.innerWidth >= 1024) setSlidesPerView(3);
       else if (window.innerWidth >= 768) setSlidesPerView(2);
       else setSlidesPerView(1);
@@ -59,8 +62,8 @@ const ProjectCarousel = () => {
 
   useEffect(() => {
     updateSlidesPerView();
-    window.addEventListener('resize', updateSlidesPerView);
-    return () => window.removeEventListener('resize', updateSlidesPerView);
+    window.addEventListener("resize", updateSlidesPerView);
+    return () => window.removeEventListener("resize", updateSlidesPerView);
   }, [updateSlidesPerView]);
 
   const maxIndex = Math.max(0, projects.length - slidesPerView);
@@ -127,7 +130,9 @@ const ProjectCarousel = () => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`carousel-dot ${currentIndex === index ? 'carousel-dot-active' : ''}`}
+            className={`carousel-dot ${
+              currentIndex === index ? "carousel-dot-active" : ""
+            }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
