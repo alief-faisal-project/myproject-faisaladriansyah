@@ -3,12 +3,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import ProjectCard from "./ProjectCard";
 
 import bannerCompanyDesktop from "@/assets/banner-company-desktop.jpg";
-import bannerCompanyMobile from "@/assets/banner-company-mobile.jpg";
 import bannerPetaniDesktop from "@/assets/banner-petani-desktop.png";
-import bannerPetaniMobile from "@/assets/banner-petani-mobile.png";
 import bannerDemoDesktop from "@/assets/banner-demo-desktop.jpeg";
 import bannerDemoMobile from "@/assets/banner-demo-mobile.jpg";
-import bannerShowroom from "@/assets/banner-showroom-desktop.png";
 import bannerurbnx from "@/assets/bannerurbnx.png";
 
 const projects = [
@@ -18,7 +15,7 @@ const projects = [
     description:
       "Website company profile untuk produk Busalime dengan desain modern dan profesional. Menampilkan informasi produk, dan  detail perusahaan .",
     desktopBanner: bannerCompanyDesktop,
-    mobileBanner: bannerCompanyMobile,
+    mobileBanner: bannerCompanyDesktop,
     url: "https://busalime.vercel.app",
   },
   {
@@ -27,14 +24,14 @@ const projects = [
     description:
       "Sistem pemetaan digital untuk kelompok petani padi di Kabupaten Pandeglang. Membantu identifikasi lokasi dan data kelompok tani.",
     desktopBanner: bannerPetaniDesktop,
-    mobileBanner: bannerPetaniMobile,
+    mobileBanner: bannerPetaniDesktop,
     url: "https://pemetaanpoktan.vercel.app",
   },
   {
     id: 3,
-    title: "Website Urban Fashion Modern",
+    title: "Website Urban Fashion Modern Clean, Minimalis dan Industrial",
     description:
-      "Website Showcase Produk Fashion Seperti Backpack, T-Shirt, Hoodie Dll",
+      "Website showcase produk fashion yang menampilkan berbagai koleksi seperti backpack, T-shirt, hoodie, dan item fashion lainnya, dengan tampilan modern, Clean dan Industrial",
     desktopBanner: bannerurbnx,
     mobileBanner: bannerurbnx,
     url: "https://urbnx.vercel.app/",
