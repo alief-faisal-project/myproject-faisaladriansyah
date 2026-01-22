@@ -25,7 +25,7 @@ const projects = [
       "Sistem pemetaan digital untuk kelompok petani padi di Kabupaten Pandeglang. Membantu identifikasi lokasi dan data kelompok tani.",
     desktopBanner: bannerPetaniDesktop,
     mobileBanner: bannerPetaniDesktop,
-    url: "https://pemetaanpoktan.vercel.app",
+    url: "https://pemetaanpoktan-pandeglang.vercel.app",
   },
   {
     id: 3,
